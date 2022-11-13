@@ -15,6 +15,7 @@
   "author": "Arsenii Maksymenko <maxarmyk@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "flatpickr": "^4.6.13",
     "modern-normalize": "^1.1.0"
   },
   "devDependencies": {
