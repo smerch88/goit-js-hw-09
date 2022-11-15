@@ -1,3 +1,4 @@
+"use strict";
 // Описаний в документації
 import flatpickr from "flatpickr";
 // Додатковий імпорт стилів
@@ -54,7 +55,7 @@ function timerRun() {
   timerId = setInterval(() => {
     const dateNow = new Date();
     const date = savedDate - dateNow.getTime();
-    convertedDate = convertMs(date);
+    let convertedDate = convertMs(date);
     daysRef.textContent = addLeadingZero(convertedDate.days);
     hoursRef.textContent = addLeadingZero(convertedDate.hours);
     minutesRef.textContent = addLeadingZero(convertedDate.minutes);
