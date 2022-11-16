@@ -55,6 +55,7 @@ function timerRun() {
   timerId = setInterval(() => {
     const dateNow = new Date();
     const date = savedDate - dateNow.getTime();
+    if (date <= 0) return;
     let convertedDate = convertMs(date);
     daysRef.textContent = addLeadingZero(convertedDate.days);
     hoursRef.textContent = addLeadingZero(convertedDate.hours);
